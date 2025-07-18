@@ -2,10 +2,10 @@ from google.adk.agents import Agent
 from .tools import codebook, decryptor
 
 root_agent = Agent(
-    name="weather_time_agent",
+    name="codebreaker_agent",
     model="gemini-2.0-flash",
     description=(
-        "Agent to answer questions about the time and weather in a city."
+        "Code-breaking agent that fetches the daily secret key and decrypts user-supplied messages."
     ),
     instruction=(
         """You are a code-breaking agent with a two-step mission:
